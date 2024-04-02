@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Arial", sans-serif;
+    background: url(./images/background_new.jpg) 0 0/100% auto repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+}
+
+h1,div{
+    color: #fff;
+}
+
+h1{
+    font-size: 4rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__elem{
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.container__elem span{
+    font-size: 1.15rem;
+}
+
+.container__text{
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1;
+}
