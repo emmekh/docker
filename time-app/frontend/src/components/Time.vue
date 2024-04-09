@@ -34,12 +34,7 @@ export default {
     <h3 v-if="savedTimes.length && showSavedTimes">
       Ранее сохраненные времена:
     </h3>
-    <div
-      v-if="showSavedTimes"
-      class="deleted-items"
-      v-for="savedTime in savedTimes"
-      :key="savedTime.id"
-    >
+    <div v-if="showSavedTimes" class="deleted-items" v-for="savedTime in savedTimes" :key="savedTime.id">
       <div class="deleted-item">{{ savedTime.time }}</div>
       <button class="btn-sm bg-red" @click="() => deleteTime(savedTime.id)">
         Удалить
